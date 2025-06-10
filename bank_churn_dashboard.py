@@ -11,7 +11,7 @@ def login():
     password = st.text_input("Password", type="password")
 
     if st.button("Login"):
-        if username == "admin" and password == "1234":
+        if username == "abhishek" and password == "1234567":
             st.session_state["authenticated"] = True
         else:
             st.error("Invalid credentials")
@@ -50,8 +50,6 @@ if membership:
     filtered_df = filtered_df[filtered_df["membership_category"].isin(membership)]
 if medium:
     filtered_df = filtered_df[filtered_df["medium_of_operation"].isin(medium)]
-if internet:
-    filtered_df = filtered_df[filtered_df["internet_option"].isin(internet)]
 if complaint_status:
     filtered_df = filtered_df[filtered_df["complaint_status"].isin(complaint_status)]
 if feedback:
