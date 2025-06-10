@@ -26,7 +26,7 @@ if not st.session_state["authenticated"]:
 # ----------------------
 # Load Data
 # ----------------------
-df = pd.read_csv("bank_customer_churn.csv")  # Replace with your actual path
+df = pd.read_csv("cleaned_file.csv")  # Replace with your actual path
 
 # ----------------------
 # Sidebar Filters
